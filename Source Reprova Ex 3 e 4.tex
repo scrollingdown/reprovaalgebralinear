@@ -1,0 +1,966 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{geometry}
+\geometry{a1paper,left=2cm,right=10mm,top=1cm,bottom=3cm}
+
+\title{Algebra Linear }
+
+
+\author{João Pedro Borges Baeta\\
+Jules Severo Barcos\\\\Professor - Alexandre Garcia De Oliveira
+$29 / 10 / 2022$}
+\date{}
+
+
+\begin{document}
+\maketitle
+\section{Exercício 3}
+Considere o conjunto $\mathrm{W}=\{(\mathrm{x}, \mathrm{y}, \mathrm{z}, \mathrm{w}, \mathrm{t}, \mathrm{u}) \mid x, y, z, w, t, u \in R \wedge x+y+w+z+t+u=0 \wedge y-w-z=$ $0 \wedge w+t-x=0\} \subseteq R^{6}$.
+
+Mostre que conjunto $\mathrm{W}$ é um subespaço do R-espaço vetorial $\mathrm{R}^{6}$.
+$$
+\begin{aligned}
+&\mathrm{t}-\mathrm{x}=0 \\
+&\mathrm{t}=\mathrm{x} \\
+&\mathrm{y}-\mathrm{w}-\mathrm{z}=0 \\
+&\mathrm{y}=\mathrm{w}+\mathrm{z} \\
+&\mathrm{x}+\mathrm{y}+\mathrm{w}+\mathrm{z}+\mathrm{t}+\mathrm{u}=0 \rightarrow x+w+z+w+z+x+u=0 \\
+&\mathrm{u}=-\mathrm{x}-\mathrm{y}-\mathrm{w}-\mathrm{z}-\mathrm{t} \rightarrow u=-2 x-2 w-2 z \\
+&\mathrm{~W}=\{(\mathrm{x}, \mathrm{w}+\mathrm{z}, \mathrm{z}, \mathrm{w}, \mathrm{x},-\mathrm{x}-\mathrm{w}-\mathrm{z}-\mathrm{w}-\mathrm{z}-\mathrm{x})\} \rightarrow \\
+&\mathrm{W}=\{(\mathrm{x}, \mathrm{w}+\mathrm{z}, \mathrm{z}, \mathrm{w}, \mathrm{x},-2 \mathrm{x}-2 \mathrm{w}-2 \mathrm{z}) \mid x, z, w \in R\} \\
+&\text { I) } 0 \in W \text { parax }=0 z=0 w=0 \\
+&\text { (w, w, w, w, w, -w) } \rightarrow(x, w+z, z, w, x,-2 x-2 w-2 z) \\
+&=(0,0,0,0,0,-0) \\
+&=0 \\
+&\text { Logo, } 0 \in W \\
+&\text { II) } \mathrm{u}, \mathrm{v} \in W \rightarrow u+v \in W, \text { sendo : }
+\end{aligned}
+$$
+$\mathrm{u}=(\mathrm{u} 1, \mathrm{u} 2, \mathrm{u} 3, \mathrm{u} 4, \mathrm{u} 5,-\mathrm{u} 6) \rightarrow\left(x_{1}, w_{1}+z_{1}, z_{1}, w_{1}, x_{1},-2 x_{1}-2 w_{1}-2 z_{1}\right)$
+
+$\mathrm{v}=(\mathrm{v} 1, \mathrm{v} 2, \mathrm{v} 3, \mathrm{v} 4, \mathrm{v} 5,-\mathrm{v} 6) \rightarrow\left(x_{2}, w_{2}+z_{2}, z_{2}, w_{2}, x_{2},-2 x_{2}-2 w_{2}-2 z_{2}\right)$
+
+$\mathrm{u}+\mathrm{v}=\left(\mathrm{x}_{1}+x_{2},\left(w_{1}+z_{1}\right)+\left(w_{2}+z 2\right), z_{1}+z_{2}, w_{1}+w_{2}, x_{1}+x_{2},\left(-2 x_{1}-2 w_{1}-2 z_{2}\right)+\left(-2 x_{2}-2 w_{2}-2 z_{2}\right)\right)$
+
+$\mathrm{u}+\mathrm{v}=\left(\mathrm{x}_{1} x_{2}, w_{1} z_{1} w_{2} z_{2}, z_{1}, z_{2}, w_{1}+w_{2}, x_{1}+x_{2},-2 x_{1}-2 x_{2},-2 w_{1}-2 w_{2},-2 z_{1}-2 z_{2}\right)$
+
+Logo, $\mathrm{u}+\mathrm{v} \in ao conjunto W$
+
+III $) \mathrm{a} \in R, v \in W \rightarrow a v \in W, \operatorname{sendo}:$
+
+$\mathrm{v}=(\mathrm{v} 1, \mathrm{v} 2, \mathrm{v} 3, \mathrm{v} 4, \mathrm{v} 5,-\mathrm{v} 6) \rightarrow(x, w+z, z, w, x,-2 x-2 w-2 z)$
+
+$\mathrm{av}=\mathrm{a} \cdot\left(\mathrm{x}_{1}, w_{1}+z_{1}, z_{1}, w_{1}, x_{1},-2 x_{1}-2 w_{1}-2 z_{1}\right)$
+
+$\mathrm{av}=\left(\mathrm{a} . \mathrm{x}_{1}, a . w_{1}+z_{1}, a . z_{1}, a . w_{1}, a . x_{1}, a .-2 x_{1}-2 w_{1}-2 z_{1}\right)$
+
+$\mathrm{av}=\left(\operatorname{ax}_{1}, a w_{1} w_{2}, a z_{1}, a w_{1}, a x_{1}, a-2 x_{1}-2 w_{1}-2 z_{1}\right)$
+
+Logo, av $\in ao conjunto W$
+
+Logo o conjunto W é subespaço vetorial de R6.
+
+\begin{itemize}
+  \item $\mathrm{O}$ conjunto $\mathrm{W}=\{(\mathrm{x}, \mathrm{y}, \mathrm{z}) \mid x, y, z \in R \wedge x-z=1 \wedge y+x=0\}$
+\end{itemize}
+é um subsespaço vetorial de R3? Esboce graficamente W.
+
+$\mathrm{x}-\mathrm{z}=1$ à $\mathrm{x}=1+\mathrm{z}$
+
+$\mathrm{y}+\mathrm{x}=0$ à $\mathrm{y}+1+\mathrm{z}=0$ à $\mathrm{y}=-1-\mathrm{z}$.
+
+$\mathrm{W}=\{(1+\mathrm{z},-1-\mathrm{z}, \mathrm{z})\}$
+
+I) $0 \in W$, paraz $=0$
+
+$(1+\mathrm{z},-1-\mathrm{z}, \mathrm{z})$ à $(1+0,-1-0,0)=(1,-1,0)$.
+
+Logo ,$0 nao  pertence a $\mathrm{W}$ para $\mathrm{z}=0$. Portanto, W não é subespaço vetorial.
+
+\includegraphics[max width=\textwidth]{2022_10_29_7473a59c39a885850a52g-7}
+
+Figura 1: Representação gráfica do subespaço vetorial de R3.
+
+\begin{itemize}
+  \item Invente seu subespaço vetorial em qualquer $\mathrm{R}$ n com $\mathrm{n}$ maior igual a 2. Mostre que o conjunto apresentado é de fato um subespaço vetorial. Não vale usar nenhum exemplo da aula ou da prova
+\end{itemize}
+$\mathrm{Z}=\{(\mathrm{x}, \mathrm{y}, \mathrm{z}) \mid 2 y+z=0 \wedge x+y=0\}$
+
+$2 \mathrm{y}+\mathrm{z}=0$
+
+$\mathrm{x}+\mathrm{y}=0$
+
+$z=-2 y$
+
+$\mathrm{x}=-\mathrm{y}$
+
+$\mathrm{Z}=(-\mathrm{y}, \mathrm{y},-2 \mathrm{y})$
+
+$\mathrm{Z}=\{(-\mathrm{z}, \mathrm{z},-\mathrm{z}) \mid Z \in R\}$
+
+I) $0 \in Z, \operatorname{paraz}=0$
+
+$(\mathrm{z}, \mathrm{z}, \mathrm{z})$ à $(-\mathrm{y}, \mathrm{y},-2 \mathrm{y})$
+
+y à 0
+
+$(-\mathrm{y}, \mathrm{y},-2 \mathrm{y})=(-0,0,-0)=(0,0,0)$
+
+Logo, $0 \in Z$ II) $\mathrm{u}, \mathrm{v} \in Z \rightarrow u+v \in Z$, sendo :
+
+$\mathrm{u}=(\mathrm{u} 1, \mathrm{u} 2, \mathrm{u} 3)$
+
+$\mathrm{v}=(\mathrm{v} 1, \mathrm{v} 2, \mathrm{v} 3)$ à $(-\mathrm{y}, \mathrm{y},-2 \mathrm{y})$
+
+$\mathrm{u}+\mathrm{v}=(\mathrm{u} 1, \mathrm{u} 2, \mathrm{u} 3)+(-\mathrm{y}, \mathrm{y},-2 \mathrm{y})$
+
+$\mathrm{u}+\mathrm{v}=(\mathrm{u} 1-\mathrm{y}, \mathrm{u} 2+\mathrm{y},-\mathrm{u} 3-2 \mathrm{y})$
+
+Logo, $u+v \in Z$
+
+III) a $\in \mathrm{R}, \mathrm{v} \in Z \rightarrow a v \in Z$. Sendo :
+
+$\mathrm{v}=(\mathrm{v} 1, \mathrm{v} 2, \mathrm{v} 3)$ à(-y, y, -2y)
+
+a.v $=a \cdot(-y, y,-2 y)$
+
+a.v $=(\mathrm{a} \cdot(-\mathrm{y}), \mathrm{a} \cdot \mathrm{y}, \mathrm{a} \cdot(-2 \mathrm{y}))$
+
+a.v $=(-a y$, ay, $-$ a $2 y)$
+
+Logo, av $\in Z$
+
+Logo Z é subespaço vetorial de $R 3$
+
+\section{Exercício 4}
+Mostre que o conjunto $\{(1,1,1,1,0,1,1),(1,0,1,1,1,1,0),(2,2,1,1,1,1,1),(1,0,0,1,2,1,1),(2$, $0,2,0,2,0,2),(1,1,1,1,1,1,1),(3,0,2,0,2,1,2)\}$ forma uma base para o Respaço vetorial R7. Escreva o vetor $(0,1,1,1,1,0,1)$ nesta base.
+
+\textbf{}\\
+\\\\\\\\\\
+\xrightarrow{Início}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & a\\
+1 & 0 & 2 & 0 & 0 & -1 & 0 & b\\
+1 & -1 & 1 & 0 & 2 & -1 & 2 & c\\
+1 & 1 & 1 & 1 & 0 & -1 & 0 & d\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & e\\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & f\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & g\\
+\end{tabular}
+\right]}
+\end{hbox}
+\\\\\\\\\\
+\begin{hbox}{ 
+$
+$$\xrightarrow{l2\rightarrow l2+l1}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & a\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+1 & -1 & 1 & 0 & 2 & -1 & 2 & c\\
+1 & 1 & 1 & 1 & 0 & -1 & 0 & d\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & e\\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & f\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & g\\
+\end{tabular}
+\right]\\
+$}
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l3\rightarrow l3+l1}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & a\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & c+a\\
+1 & 1 & 1 & 1 & 0 & -1 & 0 & d\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & e\\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & f\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & g\\
+\end{tabular}
+\right]
+$}
+\end{hbox}
+
+$
+$$\xrightarrow{l4\rightarrow l4 + l1}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & a\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & c+a\\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & d+a\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & e\\
+1 & -1 & 1 & 1 & 0 & -1 & -1 & f\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & g\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow l6+l1}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & a\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & c+a\\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & d+a\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & e\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & f+a\\
+1 & 0 & 1 & 1 & 2 & 1 & 2 & g\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow l7 + l1}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 1 & 2 & 1 & 2 & 1 & 3 & a\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & c+a\\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & d+a\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & e\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & f+a\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & g+a\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l1\rightarrow l1-l2}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & c+a\\
+0 & 2 & 3 & 2 & 2 & 0 & 3 & d+a\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & e\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & f+a\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & g+a\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l4\rightarrow l4/2}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & c+a\\
+0 & 1 & 3/2 & 0 & 0 & 0 & 3/2 & d+a/2\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & e\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & f+a\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & g+a\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l4\rightarrow l4-l2}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & c+a\\
+0 & 0 & -5/2 & 0 & -1 & 0 & -3/2 & d+3a-2b/2\\
+0 & 1 & -1 & 2 & 2 & -1 & 2 & e\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & f+a\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & g+a\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l5\rightarrow l5-l2}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & c+a\\
+0 & 0 & -5/2 & 0 & -1 & 0 & -3/2 & d+3a-2b/2\\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & e-b+a\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & f+a\\
+0 & 1 & 3 & 2 & 4 & 2 & 5 & g+a\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l7\rightarrow l7-l2}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 3 & 1 & 4 & 0 & 5 & c+a\\
+0 & 0 & -5/2 & 0 & -1 & 0 & -3/2 & d+3a-2b/2\\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & e-b+a\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & f+a\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & g+2a-b\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l3\rightarrow l3/3}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & -5/2 & 0 & -1 & 0 & -3/2 & d+3a-2b/5\\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & e-b+a\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & f+a\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & g+2a-b\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l4\rightarrow -2.5.l4}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 1 & 0 & 2/5 & 0 & 3/5 & -d+3a-2b/5\\
+0 & 0 & -5 & 1 & 0 & -1 & -1 & e-b+a/5\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & f+a\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & g+2a-b\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l5\rightarrow l5/5}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 1 & 0 & 2/5 & 0 & 3/5 & -d+3a-2b/5\\
+0 & 0 & -1 & 1/5 & 0 & -1/5 & -1/5 & e-b+a/5\\
+0 & 0 & 3 & 2 & 2 & 0 & 2 & b+a/3\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & g+2a-b\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow l6/3}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 1 & 0 & 2/5 & 0 & 3/5 & \(\frac{-3d-14a+6b-2c}{15}\)\\
+0 & 0 & -1 & 1/5 & 0 & -1/5 & -1/5 & e-b+a/5\\
+0 & 0 & 1 & 2/3 & 2/3 & 0 & 2/3 & f+a/3\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & g+2a-b\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l4\rightarrow l4-l3}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 0 & -1/3 & -14/15 & 0 & 16/15 & -3d-14a+6b-3c \\
+0 & 0 & -1 & 1/5 & 0 & -1/5 & -1/5 & e-b+a/5\\
+0 & 0 & 1 & 2/3 & 2/3 & 0 & 2/3 & f+a/3\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & g+2a-b\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l5\rightarrow l5+l3}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 0 & -1/3 & -14/15 & 0 & 16/15 & \(\frac{-3d-14a+6b-3c}{15}\)\\
+0 & 0 & 0 & 8/15 & 4/3 & -1/5 & 22/15 & \(\frac{8a+3e-3b+3c}{15}\)\\
+0 & 0 & 1 & 2/3 & 2/3 & 0 & 2/3 & f+a/3\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & g+2a-b\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l6\rightarrow l6-l3}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 0 & -1/3 & -14/15 & 0 & 16/15 & \(\frac{-3d-14a+6b-3c}{15}\)\\
+0 & 0 & 0 & 8/15 & 4/3 & -1/5 & 22/15 & \(\frac{8a+3e-3b+3c}{15}\)\\
+0 & 0 & 0 & 1/3 & -2/3 & 0 & -1 & f-c/3\\
+0 & 0 & -1 & 1 & 2 & 2 & 2 & g+2a-b\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l7\rightarrow l7+l3}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 0 & -1/3 & -14/15 & 0 & 16/15 & \(\frac{-3d-14a+6b-3c}{15}\)\\ \\
+0 & 0 & 0 & 8/15 & 4/3 & -1/5 & 22/15 & \(\frac{8a+3e-3b+3c}{15}\)\\
+0 & 0 & 0 & 1/3 & -2/3 & 0 & -1 & f-c/3\\
+0 & 0 & 0 & 4/3 & 10/3 & 2 & 11/3 & \(\frac{3g+7a-3b+c}{3}\)\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l4\rightarrow 3.l4}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & \(\frac{-3d-14a+6b-3c}{5}\)\\
+0 & 0 & 0 & 8/15 & 4/3 & -1/5 & 22/15 & \(\frac{8a+3e-3b+3c}{15}\)\\
+0 & 0 & 0 & 1/3 & -2/3 & 0 & -1 & f-c/3\\
+0 & 0 & 0 & 4/3 & 10/3 & 2 & 11/3 & \(\frac{3g+7a-3b+c}{3}\)\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l5\rightarrow 15/8.l5}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & \(\frac{-3d-14a+6b-3c}{5}\)\\
+0 & 0 & 0 & 1 & 5/2 & -3/8 & 11/4 & \(\frac{8a+3e-3b+3c}{8}\)\\
+0 & 0 & 0 & 1/3 & -2/3 & 0 & -1 & f-c/3\\
+0 & 0 & 0 & 4/3 & 10/3 & 2 & 11/3 & \(\frac{3g+7a-3b+c}{3}\)\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l6\rightarrow 3.l6}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & \(\frac{-3d-14a+6b-}{5}\)\\
+0 & 0 & 0 & 1 & 5/2 & -3/8 & 11/4 & \(\frac{8a+3e-3b+3c}{8}\) \\
+0 & 0 & 0 & 1 & -2 & 0 & -3 & f-c\\
+0 & 0 & 0 & 4/3 & 10/3 & 2 & 11/3 & \(\frac{3g+7a-3b+c}{3}\) \\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l5\rightarrow l5-l4}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & \(\frac{-3d-14a+6b-}{5}\)\\
+0 & 0 & 0 & 0 & -3/10 & -3/8 & -9/20 & \(\frac{8a+3e-3b+3c}{8}\)\\
+0 & 0 & 0 & 1 & -2 & 0 & -3 & f-c\\
+0 & 0 & 0 & 1 & 5/2 & 3/2 & 11/4 & \(\frac{3g+7a-3b+c}{4}\)\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l6\rightarrow l6-l4}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & c+a/3\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & \(\frac{-3d-14a+6b-}{5}\)\\
+0 & 0 & 0 & 0 & -3/10 & -3/8 & -9/20 & \(\frac{-72a+13e-+55b+15c-24d}{40}\)\\
+0 & 0 & 0 & 0 & -24/5 & 0 & -31/5 & f-c\\
+0 & 0 & 0 & 1 & 5/2 & 3/2 & 11/4 & \(\frac{3g+7a-3b+c}{4}\)\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l7\rightarrow l7-l4}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & -3/10 & -3/8 & -9/20 & \(\frac{-72a+15e+33b-15c-24d}{40}\)\\\\
+0 & 0 & 0 & 0 & -24/5 & 0 & -31/5 & \(\frac{5f-10c-3d-14a+6b}{5}\)\\\\
+0 & 0 & 0 & 0 & -3/10 & 3/2 & -9/20 & \(\frac{15g-21a+9b-15c-12d}{20}\)\\\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l5\rightarrow -10/3.l4}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & - \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & -24/5 & 0 & -31/5 & \(\frac{5f-10c-3d-14a+6b}{5}\)\\\\
+0 & 0 & 0 & 0 & -3/10 & 3/2 & -9/20 & \(\frac{15g-21a+9b-15c-12d}{20}\)\\\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow -5/24.l6}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & - \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 31/24 & - \(\frac{5f-10c-3d-14a+6b}{24}\)\\\\
+0 & 0 & 0 & 0 & -3/10 & 3/2 & -9/20 & \(\frac{15g-21a+9b-15c-12d}{20}\)\\\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow -10/3.l7}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & - \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 31/24 & - \(\frac{5f-10c-3d-14a+6b}{24}\)\\\\
+0 & 0 & 0 & 0 & 1 & -5 & 3/2 & - \(\frac{5g+7a+3b-5c-4d}{2}\)\\\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow l6-l5}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & - \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & 0 & -5/4 & -5/24 & \(\frac{-20c+30e-5f-45d-130a+60b}{24}\)\\\\
+0 & 0 & 0 & 0 & 1 & -5 & 3/2 & - \(\frac{5g+7a+3b-5c-4d}{2}\)\\\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow l7-l5}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & - \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & 0 & -5/4 & -5/24 & \(\frac{-20c+30e-5f-45d-130a+60b}{24}\)\\\\
+0 & 0 & 0 & 0 & 0 & -25/4 & 0 & \(\frac{-38a+5e-10g+5b+5c}{4}\)\\\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow -4/5.l6}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & - \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 1/6 & - \(\frac{-4c+6e-f-9d-26a+12b}{6}\)\\\\
+0 & 0 & 0 & 0 & 0 & -25/4 & 0 & \(\frac{-38a+5e-10g+5b+5c}{4}\)\\\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow -4/25.l7}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & - \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 1/6 & - \(\frac{-4c+6e-f-9d-26a+12b}{6}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & - \(\frac{-38a+5e-10g+5b+5c}{4}\)\\\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l7\rightarrow l7-l6}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & - \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 1/6 & - \(\frac{-4c+6e-f-9d-26a+12b}{6}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & -1/6 & \(\frac{120e-422a+270b-130c-225d+60g-25f}{150}\)\\\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l7\rightarrow -6.l7}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & - \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 1/6 & - \(\frac{-4c+6e-f-9d-26a+12b}{6}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l6\rightarrow l6- (1/6.l7)}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 3/2 & \(\frac{-24a+5e+11b-5c-8d}{4}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+
+$
+$$\xrightarrow{l5\rightarrow l5-(3/2.l7)}
+\\\\
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 16/5 & - \(\frac{-3d-14a+6b-5c}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 0 & \(\frac{595e-1932a+1345b-655c+1150d+360g-150f}{100}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 &  \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 &  -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]\\
+$
+\end{hbox}\\
+\\\\\\\\\\
+\xrightarrow{l4\rightarrow l4- (16/5.l7)}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 5/3 & \(\frac{c+a}{3}\)\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 0 & \(\frac{1920e-3525d-3402a+4170b-1955c+960g-400f}{125}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 0 & \(\frac{595e-1932a+1345b-655c+1150d+360g-150f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\\
+\\\\\\\\\\
+
+
+$
+$$\xrightarrow{l3\rightarrow l3-(5/3.l7)}
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 3 & b+a\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 0 & \(\frac{120e-125c-417a+270b-255d+60g-25f}{15}\)\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 0 & \(\frac{1920e-3525d-3402a+4170b-1955c+960g-400f}{125}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 0 & \(\frac{595e-1932a+1345b-655c+1150d+360g-150f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\end{hbox}\\
+\\\\\\\\\\
+
+\xrightarrow{l2\rightarrow l2 - (3.l7)}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 0 & \(\frac{360e+835b-1214a-390c-675d+180g-75f}{25}\)\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 0 & \(\frac{120e-125c-417a+270b-255d+60g-25f}{15}\)\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 0 & \(\frac{1920e-3525d-3402a+4170b-1955c+960g-400f}{125}\)\\\\
+0 & 0 & 0 & 0 & 1 & 5/4 & 0 & \(\frac{595e-1932a+1345b-655c+1150d+360g-150f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\\
+\\\\\\\\\\
+
+
+$
+$$\xrightarrow{l5\rightarrow l5-(5/4.l6)}
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 1 & 0 & 2a+b\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 0 & \(\frac{360e+835b-1214a-390c-675d+180g-75f}{25}\)\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 0 & \(\frac{120e-125c-417a+270b-255d+60g-25f}{15}\)\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 0 & \(\frac{1920e-3525d-3402a+4170b-1955c+960g-400f}{125}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\end{hbox}\\
+\\\\\\\\\\
+
+\xrightarrow{l1\rightarrow l1 - l6}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 0 & 0 & \(\frac{12a+5e+30b-10g+5c}{25}\)\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 0 & \(\frac{360e+835b-1214a-390c-675d+180g-75f}{25}\)\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 0 & \(\frac{120e-125c-417a+270b-255d+60g-25f}{15}\)\\\\
+0 & 0 & 0 & 1 & 14/5 & 0 & 0 & \(\frac{1920e-3525d-3402a+4170b-1955c+960g-400f}{125}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\\
+\\\\\\\\\\
+
+
+$
+$$\xrightarrow{l4\rightarrow l4-(14/5.l5)}
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 0 & 0 & \(\frac{12a+5e+30b-10g+5c}{25}\)\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 0 & \(\frac{360e+835b-1214a-390c-675d+180g-75f}{25}\)\\\\
+0 & 0 & 1 & 1/3 & 4/3 & 0 & 0 &  \(\frac{120e-125c-417a+270b-255d+60g-25f}{15}\)\\\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & \(\frac{16g+60e-302d+161a-25b+10c-16f}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 &  \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\end{hbox}\\
+\\\\\\\\\\
+
+\xrightarrow{l3\rightarrow l3 - (4/3.l5)}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 0 & 0 & \(\frac{12a+5e+30b-10g+5c}{25}\)\\\\
+0 & 1 & 4 & 1 & 2 & 0 & 0 &  \(\frac{360e+835b-1214a-390c-675d+180g-75f}{25}\)\\\\
+0 & 0 & 1 & 1/3 & 0 & 0 & 0 & \(\frac{260g+620e-605c-2237a+1370b-1275d-125f}{75}\)\\\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & \(\frac{16g+60e-302d+161a-25b+10c-16f}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\\
+\\\\\\\\\\
+
+
+$
+$$\xrightarrow{l2\rightarrow l2-(2.l5)}
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 0 & 0 & \(\frac{12a+5e+30b-10g+5c}{25}\)\\\\
+0 & 1 & 4 & 1 & 0 & 0 & 0 & \(\frac{74e+169b-258a-76c-135d+32g-15f}{5}\)\\\\
+0 & 0 & 1 & 1/3 & 0 & 0 & 0 & \(\frac{260g+620e-605c-2237a+1370b-1275d-125f}{75}\)\\\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & \(\frac{16g+60e-302d+161a-25b+10c-16f}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\end{hbox}\\
+\\\\\\\\\\
+
+\xrightarrow{l3\rightarrow l3 - (1/3.l4)}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 0 & 0 & \(\frac{12a+5e+30b-10g+5c}{25}\)\\\\
+0 & 1 & 4 & 1 & 0 & 0 & 0 & \(\frac{74e+169b-258a-76c-135d+32g-15f}{5}\)\\\\
+0 & 0 & 1 & 0 & 0 & 0 & 0 & \(\frac{180g+320e-655c-3042a+1495b+235d-45f}{75}\)\\\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & \(\frac{16g+60e-302d+161a-25b+10c-16f}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\\
+\\\\\\\\\\
+
+$
+$$\xrightarrow{l2\rightarrow l2-l4}
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 0 & 0 & \(\frac{12a+5e+30b-10g+5c}{25}\)\\\\
+0 & 1 & 4 & 0 & 0 & 0 & 0 & \(\frac{16g+14e+194b-419a-86c+167d+f}{5}\)\\\\
+0 & 0 & 1 & 0 & 0 & 0 & 0 & \(\frac{180g+320e-655c-3042a+1495b+235d-45f}{75}\)\\\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & \(\frac{16g+60e-302d+161a-25b+10c-16f}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\end{hbox}\\
+\\\\\\\\\\
+
+\xrightarrow{l2\rightarrow l2 - (4.l3)}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & -2 & 0 & 0 & 0 & 0 & \(\frac{12a+5e+30b-10g+5c}{25}\)\\\\
+0 & 1 & 0 & 0 & 0 & 0 & 0 & \(\frac{-480g-1070e-3070b+5883a+1330c+1565d+195f}{75}\)\\\\
+0 & 0 & 1 & 0 & 0 & 0 & 0 & \(\frac{180g+320e-655c-3042a+1495b+235d-45f}{75}\)\\\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & \(\frac{16g+60e-302d+161a-25b+10c-16f}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\\
+\\\\\\\\\\
+
+
+$
+$$\xrightarrow{l1\rightarrow l1+(2.l3)}
+
+$\left[
+\begin{tabular}{ccccccc|c}
+-1 & 0 & 0 & 0 & 0 & 0 & 0 & \(\frac{330g+655e-6048a+3080b-1295c+470d-90f}{75}\)\\\\
+0 & 1 & 0 & 0 & 0 & 0 & 0 & \(\frac{-480g-1070e-3070b+5883a+1330c+1565d+195f}{75}\)\\\\
+0 & 0 & 1 & 0 & 0 & 0 & 0 & \(\frac{180g+320e-655c-3042a+1495b+235d-45f}{75}\)\\\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & \(\frac{16g+60e-302d+161a-25b+10c-16f}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}
+\right]
+\end{hbox}\\
+\\\\\\\\\\
+
+$$\xrightarrow{l1\rightarrow -1.l1}
+\begin{hbox}{
+
+$\left[
+\begin{tabular}{ccccccc|c}
+1 & 0 & 0 & 0 & 0 & 0 & 0 & - \(\frac{330g+655e-6048a+3080b-1295c+470d-90f}{75}\)\\\\
+0 & 1 & 0 & 0 & 0 & 0 & 0 & \(\frac{-480g-1070e-3070b+5883a+1330c+1565d+195f}{75}\)\\\\
+0 & 0 & 1 & 0 & 0 & 0 & 0 & \(\frac{180g+320e-655c-3042a+1495b+235d-45f}{75}\)\\\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & \(\frac{16g+60e-302d+161a-25b+10c-16f}{5}\)\\\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & \(\frac{60e-1061a+685b-315c+575d+155g-75f}{50}\)\\\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & \(\frac{10g-5e-5c+38a-5b}{25}\)\\\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & -\(\frac{120e-422a+270b-130c-225d+60g-25f}{25}\)\\\\
+\end{tabular}\\
+\right]\\
+\end{hbox}\\
+\\\\\\\\\\
+\\\\
+\linebreack
+\begin{hbox}\\
+\\\\\
+\\\\\\\\\\
+\end{hbox}
+
+\section{Coordenadas}\label{ex4}
+Portanto o conjunto forma base para o espaço vetorial R7 e as coordenadas são B = {\(\frac{216}{5}\); -23; 21; \(\frac{-241}{5}\); \(\frac{217}{10}\); 15; \(\frac{19}{5}\)}
+
+
+
+\end{document}
